@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Air| HVAC</title>
+    <script src="https://kit.fontawesome.com/3db8e820c1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Vollkorn:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<header>
+
+    <div class="sitetitle">
+        <img class="logo" src="img/comfortAirLogo.png" alt="logo">
+        <h1 class="compname">Comfort Air</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">contact</a>
+    </div>
+
+    <div class="nav-btn">
+        <button><i class="fa-solid fa-bars"></i></a></button>
+    </div>
+</header>
+
+<div id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">contact</a>
+</div>
+
+
+<div class="content-container">
+
+
+    <div class="about-content">
+
+        <div>
+            <img src="img/newfolder/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg" alt="">
+            <h1 class="about-title">About Us</h1>
+            <p>At Comfort Air Systems we aimfor excellence. For over 20 years Comfort Air Systems has met the challenge.
+                Always looking to improve, you can count on Comfort Air Systems to bring excellant performance at a
+                reasonable price. Wheather it's a repair or replacement for residendial or commercial. Give Us a call
+                today for a free estimate.</p>
+
+
+        </div>
+    </div>
+
+    <div class="aside-container">
+        <video autoplay muted src="img/Call Us Today For All Your HVAC Needs!.mp4" type="video/mp4"></video>
+    </div>
+
+
+
+</div>
+
+<section class="location-container">
+
+    <div class="location">
+        <h3>We are Located out of Texas</h3>
+        <div id="map">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <ul class="footer-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <p> Copywright &copy;</p>
+    </ul>
+
+</footer>
+<script src="app.js"></script>
+<script>
+    function initMap() {
+        let location = { lat: 29.164480, lng: -95.431730 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: location,
+        });
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFCZjUuUpZ0aer75Np1D4p_AuewHOkJHY&callback=initMap"></script>
